@@ -93,6 +93,65 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
+        <h2 class="title is-3">Standard Warehouse Environment</h2>
+          <div class="content has-text-justified">
+            <p>
+              The objective is to move the two blocks on the table to the drop off location. 
+              In this video, the gripper capability of the Franka on the table has failed. 
+              Interactive Grounding identifies the capability failure and successfully updates the the plan such that the drone is no longer used, since the objects may be too heavy for it to carry.
+              The video is 4x speed.
+            </p>
+          </div>
+        <div class="content has-text-centered">
+          <video id="harware"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="95%">
+            <source src="./static/videos/delivery_video_final_sped_up.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Large Warehouse Environment</h2>
+          <div class="content has-text-justified">
+            <p>
+              The objective is to move all boxes to the drop off locations. 
+              The UR5 on the far table has lost its move capability, the nearest quadruped has lost its walk capability, and the middle Franka has lost its gripper capability.
+              Two of the large boxes are immovable and the small box nearest the UR5 on the far table cannot be moved since it is outside the reach of Franka.
+              Interactive Grounding successfully adapts to the robot capability failures and correctly identifies all immovable objects.
+            </p>
+          </div>
+        <div class="content has-text-centered">
+          <video id="harware"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="95%">
+            <source src="./static/videos/unload_video_final_sped_up.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
         <h2 class="title is-3">Hardware Demonstration</h2>
           <div class="content has-text-justified">
             <p>
