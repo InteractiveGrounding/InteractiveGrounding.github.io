@@ -74,13 +74,17 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Imbuing physical understanding in Vision-Language Models (VLMs), commonly referred to as grounding, has been shown to improve their planning ability in robotic environments. 
-            However, providing grounding in multi-robot settings necessitates VLMs not only understanding different robot capabilities, but also how different robots interact with the world. 
-            While prior work in multi-robot settings has shown providing feedback on failed plans to VLMs improves grounding, they fail to reason over multiple failure modalities, fundamentally limiting their ability for adaptive planning. 
-            Addressing this lack of grounding, we present an affordance-based hypergraph for interactively grounding VLMs by reasoning about different causes of skill failure. 
-            The hypergraph unifies object affordances, robot capabilities, and robot skills, effectively capturing what a robot can do based on its capabilities and what is available in the environment. 
-            Using the hypergraph improves grounding by providing specific feedback when task failures occur, due to poor VLM grounding or capability failures, and executing or recommending other potentially viable skills after skill failure. 
-            Simulation results show Interactive Grounding improves success rate and infeasible task detection by more than 3x over prior state-of-the-art methods and hardware demonstrations showcase Interactive Grounding adapting real robots to an object with uncertain mass.
+            Imbuing physical understanding in Vision-Language Models (VLMs), commonly referred to as grounding, has been shown to improve 
+            their planning ability in robotic environments. However, providing grounding in multi-robot settings necessitates VLMs not only 
+            understanding different robot capabilities, but also how different robots interact with the world. While prior work in multi-robot 
+            settings has shown providing feedback on failed plans to VLMs improves grounding, they fail to reason over multiple failure modalities, 
+            fundamentally limiting their ability for adaptive planning. Addressing this lack of grounding, we present an affordance-based hypergraph 
+            for interactively grounding VLMs by reasoning about different causes of skill failure. The hypergraph unifies object affordances, 
+            robot capabilities, and robot skills, effectively capturing what a robot can do based on its capabilities and what is available in the
+            environment. Using the hypergraph improves grounding by providing specific feedback when task failures occur, due to poor VLM grounding 
+            or capability failures, and executing or recommending other potentially viable skills after skill failure. Simulation results show 
+            Interactive Grounding has an absolute improvement of more than 50% in success rate and infeasible task detection over prior 
+            state-of-the-art methods and hardware demonstrations showcase Interactive Grounding adapting real robots to an object with uncertain mass.
           </p>
         </div>
       </div>
@@ -97,7 +101,7 @@
         <div class="content has-text-centered">
           <iframe width="95%" height="480" 
             src="https://drive.google.com/file/d/1ZrG2ZNcyrAdi1yYqjNpVkyshqa_xr0Q4/preview"
-            title="Standard Warehouse Environment" 
+            title="IG_Overview" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; encrypted-media" 
             allowfullscreen>
@@ -221,6 +225,22 @@
     </div>
   </div>
 </footer>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Additional Information</h2>
+        <div style="display: flex; justify-content: space-between; gap: 10px;">
+          <img src="static/images/capabilities_table.png" alt="Capability Table" style="width: 49%; height: auto;">
+          <img src="static/images/affordances_table.png" alt="Affordances Table" style="width: 49%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
